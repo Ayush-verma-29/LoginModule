@@ -1,0 +1,108 @@
+<html>
+<head>
+	<style>
+	body
+	{
+		margin: 0%;
+		padding: 0%;
+		background:url(sstc3.jpg);
+		background-size: cover;
+		background-position: center;
+		font-family:sans-serif;
+	}
+	.loginbox
+	{
+		width:320px;
+		height:420px;
+		background:white;
+		color:white;
+		top:20%;
+		left:38%;
+		position:absolute;
+		transform:translate(-50%,-50%);
+		box-sizing:border-box;
+		padding : 50px 20px;
+	}
+	.avatar
+	{
+		width:100px;
+		height:100px;
+		border-radius:100%;
+		position:absolute;
+		top:-13%;
+		left:110;
+	}
+	h1
+	{
+		margin:0;
+		padding: 0 0 20px;
+		text-align:center;
+		font-size:22px;
+	}
+	.loginbox p
+	{
+		margin:0;
+		padding:0;
+		font-weight:bold;
+	}
+	.loginbox input
+	{
+		width :100%;
+		margin-bottom:20px;
+	}
+	.loginbox input[type="text"],input[type="password"]
+	{
+		border:none;
+		border-bottom:1px solid #000000;
+		background:transparent;
+		ontline:none;
+		height:40px;
+		color:black;
+		font-size:16px;
+	}
+	.loginbox input[type:"submit"]
+	{
+		border:none;
+		outline:none;
+		background:#fb2525;
+		color:#fff;
+		font-size:18px;
+		border-radius:40px;
+	}
+	.loginbox input[type="submit"]:hover
+	{
+		cursor:pointer;
+		background:#ffc107;
+		color:#000;
+	}
+	.loginbox a
+	{
+		text-decoration:none;
+		font-size:18px;
+		line-height:20px;
+		color:blue;
+	}
+	.loginbox a:hover
+	{
+		color:#ffc107;
+	}
+	</style>
+	<script src="lg.js"></script>
+</head>
+<body>
+	<div class="loginbox">
+	<img src="sstc2.jpg" class="avatar">
+	<h1 style="color:black">Login Form</h1>
+	<form name="log" class="box" method="post" onsubmit="return validate()">
+		<p style="color:black">Username</p>
+		<input type="text" name="usernsme" placeholder="SSGI2020****" id="un" required>
+		<p style="color:black">Password</p>
+		<input type="password" name="password" placeholder="123456789" id="ps" required>
+		<input type="submit" name="" value="Login" onclick="validate()">
+		<input type="submit" name="" value="Cancel" onclick="dis()">
+		<a href="forord.html">Forgot Password</a>
+		<p style="color:black"> If you're not registered <a href="regis.html"><u>Click Here</u></a></p>
+	</form>
+	</div>
+</body>
+</html>
